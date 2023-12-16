@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TLS/SSL presentation</title>
+    <link rel="stylesheet" href="css/impress-common.css" />
+    <link rel="stylesheet" href="css/impress-demo.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main id="impress">
+      <div
+        class="step first-slide"
+        data-x="0"
+        data-y="0"
+        data-z="0"
+        data-rotate="0"
+      >
+        <h1>TLS/SSL</h1>
+        <br />
+        <h2>Student:</h2>
+        <h2>Amirhossein Zareian</h2>
+        <br />
+        <h2>Master:</h2>
+        <h2>Dr. Raziyeh Salarifard</h2>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="2000"
+        data-y="2000"
+        data-z="-2000"
+        data-rotate="90"
+      >
+        <h2>Introduction</h2>
+        <ul>
+          <li>What is HTTP & how it works?</li>
+          <li>SSL/TLS</li>
+        </ul>
+      </div>
+      <div
+        class="step first-slide"
+        data-x="4000"
+        data-y="4000"
+        data-z="-4000"
+        data-rotate="90"
+      >
+        <h1>What is HTTP & how it works?</h1>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="6000"
+        data-y="6000"
+        data-z="-6000"
+        data-rotate="90"
+      >
+        <h2>What is HTTP?</h2>
+        <ul>
+          <li>An application layer protocol</li>
+          <li>Client & server communication</li>
+          <li>HTTP Request</li>
+          <li>HTTP Response</li>
+          <li>HTTP vs HTTPS</li>
+        </ul>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="8000"
+        data-y="8000"
+        data-z="-8000"
+        data-rotate="90"
+      >
+        <h2>Client & Server communication</h2>
+        <img src="images/client-server.png" alt="client server communication" />
+        <p>
+          Image from
+          <a target="_blank" href="https://www.geeksforgeeks.org"
+            >geeksforgeeks</a
+          >
+        </p>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="10000"
+        data-y="10000"
+        data-z="-10000"
+        data-rotate="90"
+      >
+        <h2>HTTP Request</h2>
+        <img src="images/http-request.png" alt="http request structure" />
+        <p>
+          Image from
+          <a target="_blank" href="https://softuni.org/">softuni.org</a>
+        </p>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="12000"
+        data-y="12000"
+        data-z="-12000"
+        data-rotate="90"
+      >
+        <h2>HTTP Response</h2>
+        <img src="/images/http-response.png" alt="http response" />
+        <p>
+          Image from
+          <a target="_blank" href="https://www.geeksforgeeks.org"
+            >geeksforgeeks</a
+          >
+        </p>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="14000"
+        data-y="14000"
+        data-z="-14000"
+        data-rotate="90"
+      >
+        <h2>HTTP vs HTTPs</h2>
+        <img src="/images/http-vs-https.png" alt="http vs https" />
+        <p>
+          Image from
+          <a
+            target="_blank"
+            href="https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/"
+            >cloudflare</a
+          >
+        </p>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="16000"
+        data-y="16000"
+        data-z="-16000"
+        data-rotate="90"
+      >
+        <h2>HTTP vs HTTPs</h2>
+        <img src="/images/http-request-2.png" alt="http request example" />
+        <img src="/images/encrypted.png" alt="encrypted http messages" />
+        <p>
+          Image from
+          <a
+            target="_blank"
+            href="https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/"
+            >cloudflare</a
+          >
+        </p>
+      </div>
+      <div
+        class="step first-slide"
+        data-x="18000"
+        data-y="18000"
+        data-z="-18000"
+        data-rotate="90"
+      >
+        <h1>SSL/TLS</h1>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="20000"
+        data-y="20000"
+        data-z="-20000"
+        data-rotate="90"
+      >
+        <h2>SSL/TLS</h2>
+        <ul>
+          <li>What is SSL/TLS?</li>
+          <li>TLS handshake</li>
+        </ul>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="22000"
+        data-y="22000"
+        data-z="-22000"
+        data-rotate="90"
+      >
+        <h2>What is SSL/TLS</h2>
+        <ul>
+          <li>TLS version 1.0 actually began development as SSL version 3.0</li>
+          <li>SSL/TLS certificate by CA(certificate authority)</li>
+        </ul>
+        <p>What does SSL/TLS do?</p>
+        <ul>
+          <li>Encryption</li>
+          <li>Authentication</li>
+          <li>Integrity</li>
+        </ul>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="24000"
+        data-y="24000"
+        data-z="-24000"
+        data-rotate="90"
+      >
+        <h2>What is SSL/TLS</h2>
+        <img
+          src="/images/tls-ssl-versions.png"
+          alt="tls/ssl versions"
+          style="height: 70%"
+        />
+        <p>
+          Image from
+          <a
+            target="_blank"
+            href="https://www.cloudflare.com/learning/ssl/why-use-tls-1.3/"
+            >cloudflare</a
+          >
+        </p>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="26000"
+        data-y="26000"
+        data-z="-26000"
+        data-rotate="90"
+      >
+        <h2>TLS handshake</h2>
+        <ul>
+          <li>Specify which version of TLS (TLS 1.0, 1.2, 1.3, etc.)</li>
+          <li>
+            Cipher suites (key exchange methods, encryption ciphers, and hash
+            functions)
+          </li>
+          <li>Authenticate the identity with SSL certificate</li>
+          <li>Generate session keys</li>
+        </ul>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="28000"
+        data-y="28000"
+        data-z="-28000"
+        data-rotate="90"
+      >
+        <img src="/images/tcp-tls-handshake.png" alt="tcp tls handshake" />
+        <p>
+          Image from
+          <a target="_blank" href="https://www.imperva.com/">imperva.com</a>
+        </p>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="30000"
+        data-y="30000"
+        data-z="-30000"
+        data-rotate="90"
+      >
+        <!-- <h2>TLS handshake</h2> -->
+        <img
+          src="/images/tl-ssl-handshake2.png"
+          alt="tls handshake"
+          style="object-fit: contain; height: 90%"
+        />
+        <p>
+          Image from
+          <a
+            target="_blank"
+            href="https://www.ssl.com/article/ssl-tls-handshake-ensuring-secure-online-interactions/"
+            >ssl.com</a
+          >
+        </p>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="32000"
+        data-y="32000"
+        data-z="-32000"
+        data-rotate="90"
+      >
+        <!-- <h2>TLS handshake</h2> -->
+        <img
+          src="/images/tls-handshake.png"
+          alt="tls handshake"
+          style="object-fit: contain; height: 90%"
+        />
+        <p>
+          Image from
+          <a
+            target="_blank"
+            href="https://www.cloudflare.com/learning/ssl/keyless-ssl/"
+            >cloudflare</a
+          >
+        </p>
+      </div>
+      <div
+        class="step question-slide"
+        data-x="34000"
+        data-y="34000"
+        data-z="-34000"
+        data-rotate="90"
+      >
+        <h2>?</h2>
+        <p style="font-weight: bold">Any questions</p>
+      </div>
+      <div
+        class="step general-slide"
+        data-x="36000"
+        data-y="36000"
+        data-z="-36000"
+        data-rotate="90"
+      >
+        <h2>References</h2>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/"
+              >cloudflare HTTP protocol</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/"
+              >cloudflare http why http is not secure</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/"
+            >
+              cloudflare what happens in a tls handshake
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/"
+              >cloudflare TLS</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.cloudflare.com/learning/ssl/why-use-tls-1.3/"
+              >cloudflare tls 1.3</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.ssl.com/article/ssl-tls-handshake-ensuring-secure-online-interactions/"
+              >ssl.com SSL/TLS handshake</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.cloudflare.com/learning/ssl/keyless-ssl"
+              target="_blank"
+              >keyless ssl</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        class="step final-slide"
+        data-x="38000"
+        data-y="38000"
+        data-z="-38000"
+        data-rotate="180"
+      >
+        <h1 class="rotate-animation">Thanks!</h1>
+        <br />
+        <h2>Contact:</h2>
+        <h2>amirhosseinzareian01@gmail.com</h2>
+        <br />
+        <br />
+      </div>
+    </main>
+    <div id="impress-toolbar">
+      <button id="fullScreenBtn">full screen</button>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/impress.js"></script>
+    <script src="js/toolbar.js"></script>
+    <script>
+      impress().init();
+    </script>
+  </body>
+</html>
